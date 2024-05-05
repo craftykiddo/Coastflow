@@ -1,7 +1,7 @@
-## Coastflow development github!
+# Coastflow development github!
 Coastflow is a web application that allows users to use text files/ upload pdf files and automatically creates flashcards from them! 
 
-# For future development 
+## For future development 
 * PDF reader
 * Text editor
 * Frontend interface
