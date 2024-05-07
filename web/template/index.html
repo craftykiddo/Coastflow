@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="flashcard">
+      <section class="light-flashcard-front">
+        <div class="light-flashcard-front-child"></div>
+        <div class="what-is-the">What is the equation for Force?</div>
+      </section>
+      <img
+        class="show-answer-icon"
+        loading="lazy"
+        alt=""
+        src="../public/show-answer.svg"
+        id="showAnswer"
+      />
+    </div>
+
+    <script>
+      var showAnswer = document.getElementById("showAnswer");
+      if (showAnswer) {
+        showAnswer.addEventListener("click", function (e) {
+          // Please sync "show_answer" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
