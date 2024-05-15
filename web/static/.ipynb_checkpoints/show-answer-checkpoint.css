@@ -1,0 +1,162 @@
+.light-flashcard-back-child {
+  width: 70%;
+  aspect-ratio:2/1;
+  position: absolute;
+  margin: 0 !important;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 32px;
+  background-color: var(--color-whitesmoke);
+}
+.frame-child,
+.what-is-the {
+  position: relative;
+}
+.what-is-the {
+  font-weight: 800;
+}
+.frame-child {
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-wrapper,
+.what-is-the-equation-for-force-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.vector-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 19px 0 16.9px;
+  box-sizing: border-box;
+}
+.what-is-the-equation-for-force-parent {
+  width: 841px;
+  flex-direction: column;
+  gap: 13.1px;
+}
+.f-ma {
+  position: relative;
+  font-weight: 800;
+  transform: rotate(0.2deg);
+}
+.answer-space,
+.light-flashcard-back {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.answer-space {
+  width: 841px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1px 0 0;
+}
+.light-flashcard-back {
+  left: 5%;
+  width: 90%;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 280px 20px 280px;
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-38xl-6);
+  color: var(--color-darkslategray);
+  font-family: Outfit;
+}
+.answer-instance,
+.answer-instance1,
+.answer-instance2,
+.answer-instance3 {
+  border: 0;
+  background-color: #aced9c;
+  height: 160.8px;
+  width: auto;
+  outline: 0;
+  flex: 1;
+  position: relative;
+  border-radius: 14.45px;
+  min-width: 297px;
+  max-width: 100%;
+}
+.answer-instance1{
+  background-color: #efe943;
+}
+.answer-instance2{
+  background-color: #ffc077;
+}
+.answer-instance3{
+  background-color: #f77;
+}
+.difficulty-bar{
+  position: relative;
+  bottom:0%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18.7px;
+  max-width: 100%;
+}
+.show-answer-icon{
+  position: fixed;
+  width: 14%;
+  height: 14%;
+  cursor: pointer;
+  transform:translateY(300%);
+}
+.flashcard {
+  width: 100%;
+  position: relative;
+  background-color: #ccc;
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 900px) {
+  .f-ma,
+  .what-is-the {
+    font-size: var(--font-size-27xl);
+  }
+  .light-flashcard-back {
+    gap: 59px;
+  }
+  .show-answer {
+    gap: 43px;
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 675px) {
+  .light-flashcard-back {
+    padding-top: 49px;
+    padding-bottom: 184px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .f-ma,
+  .what-is-the {
+    font-size: var(--font-size-16xl);
+  }
+  .light-flashcard-back {
+    gap: 30px;
+  }
+  .show-answer {
+    gap: 22px;
+  }
+}
