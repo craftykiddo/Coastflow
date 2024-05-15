@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../static/flashcard.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="flashcard">
+      <div class="end-revision" id="endRevisionContainer">
+        <div class="end-revision-child"></div>
+        <div class="end">End</div>
+      </div>
+      <section class="light-flashcard-front">
+        <h3 class="what-is-the">What is the equation for Force?</h3>
+        <div class="show-answer-wrapper">
+          <img
+            class="show-answer-icon"
+            loading="lazy"
+            alt=""
+            src="../public/show-answer.svg"
+            id="showAnswer"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var endRevisionContainer = document.getElementById("endRevisionContainer");
+      if (endRevisionContainer) {
+        endRevisionContainer.addEventListener("click", function (e) {
+          window.location.href = "./groups.html";
+        });
+      }
+      
+      var showAnswer = document.getElementById("showAnswer");
+      if (showAnswer) {
+        showAnswer.addEventListener("click", function (e) {
+          window.location.href = "./show-answer.html";
+        });
+      }
+      </script>
+  </body>
+</html>

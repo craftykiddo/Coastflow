@@ -34,8 +34,10 @@
         <div class="show-answer-container">
           <img
             class="show-answer-icon1"
+            loading="lazy"
             alt=""
             src="../public/show-answer.svg"
+            id="showAnswer"
           />
         </div>
       </section>
@@ -74,6 +76,13 @@
     </div>
 
     <script>
+      var showAnswer = document.getElementById("showAnswer");
+      if (showAnswer) {
+        showAnswer.addEventListener("click", function (e) {
+          window.location.href = "./flashcard.html";
+        });
+      }
+      
       var answerInstance = document.getElementById("answerInstance");
       if (answerInstance) {
         answerInstance.addEventListener("click", function (e) {

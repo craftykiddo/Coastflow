@@ -1,12 +1,6 @@
-@font-face{
-    font-family: Outfit;
-    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap') format('woff2');
-}
-
 body {
-    margin: 0;
-    line-height: normal;
-    font-family: Outfit, Arial; 
+  margin: 0;
+  line-height: normal;
 }
 
 :root {
@@ -14,19 +8,41 @@ body {
   --font-outfit: Outfit;
 
   /* font sizes */
-  --font-size-38xl-6: 3.6rem;
-  --font-size-16xl: 2.188rem;
-  --font-size-27xl: 2.875rem;
+  --font-size-21xl: 40px;
+  --font-size-5xl: 24px;
+  --font-size-13xl: 32px;
+  --font-size-6xl: 25px;
+  --font-size-xl: 20px;
+  --font-size-40xl: 59px;
+  --font-size-16xl: 35px;
+  --font-size-28xl: 47px;
 
   /* Colors */
-  --color-lightgray: #ccc;
-  --color-darkslategray: #4b4b4b;
   --color-whitesmoke: #f4f4f4;
+  --color-whitesmoke-100: #eee;
+  --color-darkslategray: #4b4b4b;
+  --color-gray: #939393;
+  --color-dimgray: #686868;
+
+  /* Gaps */
+  --gap-16xl: 35px;
+  --gap-10xs: 3px;
+  --gap-11xs: 2px;
+  --gap-3xs: 10px;
 
   /* Paddings */
-  --padding-xl: 1.25rem;
-  --padding-3xl: 1.375rem;
+  --padding-xl: 20px;
+  --padding-8xs: 5px;
+  --padding-xs: 12px;
+  --padding-15xl-7: 34.7px;
+  --padding-55xl: 74px;
+  --padding-18xl: 37px;
+  --padding-121xl: 140px;
+  --padding-72xl: 91px;
+  --padding-3xl: 22px;
 
   /* Border radiuses */
-  --br-mini-5: 14.5px;
+  --br-4xs: 9px;
+  --br-13xl-8: 32.8px;
+  --br-14xl-2: 33.2px;
 }
