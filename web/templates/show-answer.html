@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="../static/show-answer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="show-answer">
+      <section class="light-flashcard-back">
+        <div class="what-is-the1">What is the equation for Force?</div>
+        <div class="force-equation">
+          <img
+            class="force-equation-child"
+            alt=""
+            src="../public/line-11.svg"
+          />
+
+          <div class="frame-group">
+            <div class="f-ma-where-m-is-mass-and-wrapper">
+              <div class="f-ma">
+                F = ma, where $m$ is mass and $a$ is acceleration.
+              </div>
+            </div>
+            <img class="vector-icon10" alt="" src="../public/vector1.svg" />
+          </div>
+        </div>
+        <div class="show-answer-container">
+          <img
+            class="show-answer-icon1"
+            alt=""
+            src="../public/show-answer.svg"
+          />
+        </div>
+      </section>
+      <section class="difficulty-bar-wrapper">
+        <section class="difficulty-bar">
+          <textarea
+            class="answer-instance"
+            rows="{6}"
+            cols="{14}"
+            id="answerInstance"
+          >
+          </textarea>
+          <textarea
+            class="answer-instance1"
+            rows="{6}"
+            cols="{14}"
+            id="answerInstance1"
+          >
+          </textarea>
+          <textarea
+            class="answer-instance2"
+            rows="{6}"
+            cols="{14}"
+            id="answerInstance2"
+          >
+          </textarea>
+          <textarea
+            class="answer-instance3"
+            rows="{6}"
+            cols="{14}"
+            id="answerInstance3"
+          >
+          </textarea>
+        </section>
+      </section>
+    </div>
+
+    <script>
+      var answerInstance = document.getElementById("answerInstance");
+      if (answerInstance) {
+        answerInstance.addEventListener("click", function (e) {
+          window.location.href = "./groups.html";
+        });
+      }
+      
+      var answerInstance1 = document.getElementById("answerInstance1");
+      if (answerInstance1) {
+        answerInstance1.addEventListener("click", function (e) {
+          window.location.href = "./groups.html";
+        });
+      }
+      
+      var answerInstance2 = document.getElementById("answerInstance2");
+      if (answerInstance2) {
+        answerInstance2.addEventListener("click", function (e) {
+          window.location.href = "./groups.html";
+        });
+      }
+      
+      var answerInstance3 = document.getElementById("answerInstance3");
+      if (answerInstance3) {
+        answerInstance3.addEventListener("click", function (e) {
+          window.location.href = "./groups.html";
+        });
+      }
+      </script>
+  </body>
+</html>
