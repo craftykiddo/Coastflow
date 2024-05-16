@@ -1,0 +1,290 @@
+.upload-file {
+  margin: 0;
+  height: 66.7px;
+  width: 418.7px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 800;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.user-interface-cancel {
+  height: 58.4px;
+  width: 58.4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-lgi-5) var(--padding-lgi-5) var(--padding-lgi-4);
+  box-sizing: border-box;
+  row-gap: 20px;
+  max-width: 100%;
+  flex-shrink: 0;
+  gap: 0;
+  font-size: var(--font-size-29xl);
+  color: var(--color-darkslategray);
+}
+.upload-icon {
+  width: 139.2px;
+  height: 139.2px;
+  position: relative;
+}
+.upload-here {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: inherit;
+}
+.upload-area {
+  align-self: stretch;
+  border-radius: 15.46px;
+  border: 3.1px dashed #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 35px var(--padding-xl);
+  gap: 11.7px;
+  z-index: 1;
+  text-align: center;
+}
+.image-1-icon {
+  height: 54.3px;
+  width: 58.4px;
+  position: relative;
+  object-fit: contain;
+}
+.biologynotesdocx {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.mb {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  font-weight: 300;
+  color: var(--color-gray);
+  display: inline-block;
+  min-width: 50px;
+}
+.file-info,
+.file-specs {
+  display: flex;
+  justify-content: flex-start;
+}
+.file-specs {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0.1px;
+  gap: var(--gap-8xs-9);
+}
+.file-info {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-lgi-5);
+  max-width: calc(100% - 39px);
+}
+.file-type-icon {
+  height: 19.5px;
+  width: 19.5px;
+  position: relative;
+}
+.uploaded-file1 {
+  align-self: stretch;
+  border-radius: 15.46px;
+  background-color: var(--color-gainsboro);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-lgi-5) var(--padding-lgi-5) var(--padding-lgi-4)
+    var(--padding-lgi-4);
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.image-2-icon {
+  height: 71.8px;
+  width: 58.4px;
+  position: relative;
+  object-fit: contain;
+}
+.quantumphysicspdf {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.mb1 {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  font-weight: 300;
+  color: var(--color-gray);
+  display: inline-block;
+  min-width: 50px;
+}
+.image-2-parent,
+.quantumphysicspdf-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs-9);
+}
+.image-2-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-lgi-5);
+  max-width: calc(100% - 39px);
+}
+.vector-icon11 {
+  height: 19.5px;
+  width: 19.5px;
+  position: relative;
+}
+.uploaded-file,
+.uploaded-file2 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.uploaded-file2 {
+  border-radius: 15.46px;
+  background-color: var(--color-gainsboro);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-lgi-4) var(--padding-lgi-5) var(--padding-lgi-5)
+    var(--padding-lgi-4);
+  gap: var(--gap-xl);
+}
+.uploaded-file {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-lgi-5) 0;
+  gap: var(--gap-lgi-5);
+  font-size: var(--font-size-11xl);
+}
+.next {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 85px;
+}
+.light-upload,
+.next-button,
+.upload {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.next-button {
+  height: 48.7px;
+  border-radius: 11.68px;
+  background-color: var(--color-mediumslateblue);
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 39px 0 38.9px;
+  text-align: center;
+  color: var(--color-white);
+}
+.light-upload,
+.upload {
+  overflow: hidden;
+}
+.light-upload {
+  align-self: stretch;
+  border-radius: 24.34px;
+  background-color: var(--color-white);
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 29.3px var(--padding-lgi-5) 29.1px;
+  max-width: 100%;
+}
+.upload {
+  width: 100%;
+  position: relative;
+  background-color: rgba(75, 75, 75, 0.3);
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 132.9px 442.9px 133px 442px;
+  min-height: 1024px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-outfit);
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 975px) {
+  .upload-file {
+    font-size: 38px;
+  }
+  .upload-here {
+    font-size: var(--font-size-13xl);
+  }
+  .biologynotesdocx,
+  .quantumphysicspdf {
+    font-size: var(--font-size-5xl);
+  }
+  .next {
+    font-size: var(--font-size-13xl);
+  }
+  .light-upload {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .upload {
+    padding-left: var(--padding-202xl);
+    padding-right: var(--padding-202xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .upload-file {
+    font-size: var(--font-size-10xl);
+  }
+  .upload-here {
+    font-size: var(--font-size-5xl);
+  }
+  .biologynotesdocx {
+    font-size: var(--font-size-lg);
+  }
+  .mb {
+    font-size: var(--font-size-xl);
+  }
+  .quantumphysicspdf {
+    font-size: var(--font-size-lg);
+  }
+  .mb1 {
+    font-size: var(--font-size-xl);
+  }
+  .next {
+    font-size: var(--font-size-5xl);
+  }
+  .upload {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
