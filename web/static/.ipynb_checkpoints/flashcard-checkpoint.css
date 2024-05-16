@@ -1,11 +1,11 @@
 .body{font-family:Outfit;}
+
 .flashcard {
   width: 100%;
   background-color: var(--color-lightgray);
   overflow: hidden;
   line-height: normal;
   letter-spacing: normal;
-  align-items:center;
 }
 .light-flashcard-front, 
 .light-flashcard-back{
@@ -15,12 +15,9 @@
   padding: 20% 5%;
   box-sizing: border-box;
   max-width: 100%;
-  color: #4b4b4b;
+  color: var(--color-darkslategray);
 }
-.difficulty-bar,
-.light-flashcard-back{
-  display: none;
-}
+
 .light-flashcard-child {
   width: 70%;
   aspect-ratio:2/1;
@@ -29,6 +26,7 @@
   left: 50%;
   transform: translate(-50%);
   align-self: center;
+  align-items: center;
   border-radius: 20px;
   font-size: 60px;
   text-align:center;
@@ -41,10 +39,12 @@
   font-weight: 800;
 }
 .button-container {
-    position:relative;
-    magin-top: auto;
-    margin-bottom:5%;
+    position:absolute;
+    bottom:0;
+    margin: 0 auto;
     align-items: center;
+    left: 50%;
+    transform: translate(-50%);
 }
 .show-answer-icon {
   position: fixed;
@@ -59,6 +59,12 @@
   padding: 0 19px 0 16.9px;
   box-sizing: border-box;
 }
+.vector-icon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  flex-shrink: 0;
+}
 .frame-child {
   flex: 1;
   max-width: 100%;
@@ -68,23 +74,25 @@
 .answer-space{
   display: flex;
   box-sizing: border-box;
-  max-width: 100%;
-  width: 841px;
+  width: 100%;
   flex-direction: row;
+  padding: 0 10% 0;
   align-items: center;
-  justify-content: center;
-  padding: 0 1px 0 0;
-}}
+  vertical-align:top;
+}
 .card-text {
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     font-family: Outfit;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--color-gray);
 }
 .difficulty-bar{
   position: relative;
-  margin-top:5%;
+  margin: 5% 5% 5%;
   height: 110px;
   align-self: stretch;
   flex-direction: row;
@@ -109,6 +117,7 @@
   min-width: 297px;
   max-width: 100%;
   font-family:Outfit;
+  font-size: 20px;
   text-align:center;
 }
 .answer-instance1{

@@ -1,32 +1,21 @@
-@font-face{
-    font-family: Outfit;
-    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap') format('woff2');
-}
-
 body {
-    margin: 0;
-    line-height: normal;
-    font-family: Outfit, Arial; 
+  margin: 0;
+  line-height: normal;
 }
 
 :root {
   /* fonts */
   --font-outfit: Outfit;
 
-  /* font sizes */
-  --font-size-38xl-6: 3.6rem;
-  --font-size-16xl: 2.188rem;
-  --font-size-27xl: 2.875rem;
-
   /* Colors */
-  --color-lightgray: #ccc;
-  --color-darkslategray: #4b4b4b;
   --color-whitesmoke: #f4f4f4;
-
-  /* Paddings */
-  --padding-xl: 1.25rem;
-  --padding-3xl: 1.375rem;
+  --color-whitesmoke-100: #eee;
+  --color-darkslategray: #4b4b4b;
+  --color-gray: #939393;
+  --color-dimgray: #686868;
 
   /* Border radiuses */
-  --br-mini-5: 14.5px;
+  --br-4xs: 9px;
+  --br-13xl-8: 32.8px;
+  --br-14xl-2: 33.2px;
 }
