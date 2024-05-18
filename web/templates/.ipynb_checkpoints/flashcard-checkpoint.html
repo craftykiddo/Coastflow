@@ -15,11 +15,16 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body class = "flashcard">
+      <section class = 'end'>
+      <button type = "button" class='end-button'> End
+      </button>
+      </section>
     <section class="light-flashcard-front">
         <div class="light-flashcard-child">
             <div class="question">{{question}}</div>
             <div class = 'button-container'>
             <img
+            class = "flipImage"
             id="flipButton"
             loading="lazy"
             alt=""
@@ -43,9 +48,10 @@
         <div class="answer-space">
           <div class="card-text">{{answer | safe}}</div>
           <img class="vector-icon" alt="" src="./static/public/vector1.svg">
-        </div>
+        </div> 
         <div class = 'button-container'>
         <img
+        class="flipImage"
         id="unflipButton"
         loading="lazy"
         alt=""
@@ -55,10 +61,10 @@
         </div>
         </section>
         <section class="difficulty-bar">
-        <button type="button" class="answer-instance">Very Easy</button>
-        <button type="button" class="answer-instance1">Easy</button>
-        <button type="button" class="answer-instance2">Hard</button>
-        <button type="button" class="answer-instance3">Very Hard</button>
+        <button type="button" class = "difficulty-button" id="answer-instance3" value=0>Very Hard</button>        
+        <button type="button" class = "difficulty-button" id="answer-instance2" value=1>Hard</button>
+        <button type="button" class = "difficulty-button" id="answer-instance1" value=2>Easy</button>            
+        <button type="button" class = "difficulty-button" id="answer-instance" value=3>Very Easy</button>
       </section>
     
  <!--   <script>
@@ -76,6 +82,7 @@
           var frontCard = document.querySelector('.light-flashcard-front');
           var backCard = document.querySelector('.light-flashcard-back');
           var difficultyBar = document.querySelector('.difficulty-bar');
+          var buttons = document.querySelectorAll('.difficulty-button');
           
           // Initially hide the back card
           backCard.style.display = 'none';
@@ -96,6 +103,15 @@
               backCard.style.display = 'none';
               difficultyBar.style.display = 'none';
           });
+
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var value = button.value; // Get the value attribute of the clicked button
+                console.log(value); // Output the value to the console
+                window.location.href('./group')
+
+            });
+        });
       });
     </script>
   </body>
