@@ -21,7 +21,7 @@
       </section>
     <section class="light-flashcard-front">
         <div class="light-flashcard-child">
-            <div class="question">{{question}}</div>
+            <div class="question"></div>
             <div class = 'button-container'>
             <img
             class = "flipImage"
@@ -36,7 +36,7 @@
 
     <section class="light-flashcard-back">
         <div class="light-flashcard-child">
-          <div class="question">{{question}}</div>
+          <div class="question"></div>
           <div class="vector-wrapper">
             <img
               class="frame-child"
@@ -46,7 +46,7 @@
             />
           </div>
         <div class="answer-space">
-          <div class="card-text">{{answer | safe}}</div>
+          <div class="card-text" id = 'answer'></div>
           <img class="vector-icon" alt="" src="./static/public/vector1.svg">
         </div> 
         <div class = 'button-container'>
@@ -75,44 +75,64 @@
         });
       }
       </script> -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          var flipButton = document.getElementById('flipButton');
-          var unflipButton = document.getElementById('unflipButton');
-          var frontCard = document.querySelector('.light-flashcard-front');
-          var backCard = document.querySelector('.light-flashcard-back');
-          var difficultyBar = document.querySelector('.difficulty-bar');
-          var buttons = document.querySelectorAll('.difficulty-button');
-          
-          // Initially hide the back card
-          backCard.style.display = 'none';
-          difficultyBar.style.display = 'none';
-          
-          flipButton.addEventListener('click', function(event) {
-              event.preventDefault();
-              // Toggle visibility of front and back cards
-              frontCard.style.display = 'none';
-              backCard.style.display = 'flex';
-              difficultyBar.style.display = 'flex';
-          });
-
-          unflipButton.addEventListener('click', function(event) {
-              event.preventDefault();
-              // Toggle visibility of front and back cards
-              frontCard.style.display = 'flex';
-              backCard.style.display = 'none';
-              difficultyBar.style.display = 'none';
-          });
-
-        buttons.forEach(function(button) {
-            button.addEventListener("click", function() {
-                var value = button.value; // Get the value attribute of the clicked button
-                console.log(value); // Output the value to the console
-                window.location.href('./group')
-
-            });
+<script>
+let currentIndex = 0;
+const data = {{ data|tojson }};
+function displayData() {
+    const questions = document.querySelectorAll('.question');
+    const answer = document.getElementById('answer');
+    if (data.length > 0 && currentIndex < data.length) {
+        questions.forEach((questionDiv) => {
+            questionDiv.textContent = data[currentIndex].question;
         });
-      });
-    </script>
-  </body>
+        answer.innerHTML = data[currentIndex].answer;
+        MathJax.typesetPromise([answer]);
+    } else {
+        window.location.href = './group';
+    }
+}
+// Loads the buttons and changing elements
+document.addEventListener("DOMContentLoaded", function() {
+    displayData();
+    var flipButton = document.getElementById('flipButton');
+    var unflipButton = document.getElementById('unflipButton');
+    var frontCard = document.querySelector('.light-flashcard-front');
+    var backCard = document.querySelector('.light-flashcard-back');
+    var difficultyBar = document.querySelector('.difficulty-bar');
+    var buttons = document.querySelectorAll('.difficulty-button');
+    // Initially hide the back card
+    backCard.style.display = 'none';
+    difficultyBar.style.display = 'none';
+    // Toggle visibility of front and back cards
+    flipButton.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        frontCard.style.display = 'none';
+        backCard.style.display = 'flex';
+        difficultyBar.style.display = 'flex';
+    });
+    // Toggle visibility of front and back cards
+    unflipButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        frontCard.style.display = 'flex';
+        backCard.style.display = 'none';
+        difficultyBar.style.display = 'none';
+    });
+    // Gets the difficulty for each of the flashcards
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var value = button.value; // Get the value attribute of the clicked button
+            console.log(value); // Output the value to the console
+            currentIndex++;
+            displayData(); //Iterates to next flashcard in data list
+
+            //Resets state of flashcard
+            frontCard.style.display = 'flex';
+            backCard.style.display = 'none';
+            difficultyBar.style.display = 'none';
+        });
+    });
+});
+</script>
+</body>
 </html>
