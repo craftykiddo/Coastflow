@@ -1,5 +1,5 @@
 # Coastflow development repo!
-Coastflow is a web application that allows users to automatically convert text to flashcards using *AI*!
+Coastflow is a web application that allows users to automatically convert text to flashcards using **AI**!
 
 ## For future development
 | Function | Input | Output | 
